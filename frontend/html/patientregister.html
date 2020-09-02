@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nearby doctor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/doctorregister.css"/>
+  <style> body {
+
+    background-image: url("https://wallpaperaccess.com/full/1638168.jpg");
+    background-repeat:repeat ;
+  }</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b style="font-family: cursive;color:blue;">NEARBYDOCTOR</b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="/home"><b style="color: black;font-family: cursive;">Home</b></a></li>
+      <li><a href="#"><b style="color: red;font-family: cursive;">About us</b></a></li>
+      <li><a href="#"><b style="color: brown;font-family: cursive;text-align: right;">contact us</b></a></li>
+    </ul>
+  </div>
+</nav>
+ <!-- Sign up FORM -->
+ <div class="bg.img">
+ <form action="/api/patientregister" method="post" class="container">
+    <h2 style="font-family: cursive;text-align: center;">REGISTRATION FORM</h2>
+    <div>
+        <label style="font-family: cursive;">Username:</label>
+        <input type="text" name="username">
+    </div><br>
+    <div>
+        <label style="font-family: cursive;">Email:</label>
+        <input type="text" name="email">
+    </div><br>
+    <div>
+        <label style="font-family: cursive;">Password:</label>
+        <input type="password" name="password">
+    </div><br>
+    <div>
+            <label style="font-family: cursive;">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male" style="font-family: cursive;">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" style="font-family: cursive;">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other" style="font-family: cursive;">Other</label>    
+    </div><br>
+    <button type="submit" class="btn">Register</button>
+</form>
+</div>
+<br>
+<p style="text-align: center;">Already have an account? <a href="/doctorlogin">Login</a></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="/javascripts/site.js"></script>
+
+</body>
+</html>
