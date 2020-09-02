@@ -58,7 +58,7 @@ var userdschema=mongoose.Schema(
 app.use(express.static(__dirname+'/frontend'));
 var port= process.env.PORT  || 3000;
 app.get('/', function(req, res){
-    res.sendFile(__dirname+'/frontend/html/index.html');
+    res.sendFile(__dirname+'/frontend/html/home.html');
   });
   app.get('/home', function(req, res){
     res.sendFile(__dirname+'/frontend/html/home.html');
